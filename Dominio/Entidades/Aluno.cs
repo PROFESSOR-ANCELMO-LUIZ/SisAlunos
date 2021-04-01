@@ -6,6 +6,7 @@ namespace Dominio.Entidades
 {
     public class Aluno
     {
+        //método construtor
         public Aluno(string nome, string matricula)
         {
             Nome = nome;
