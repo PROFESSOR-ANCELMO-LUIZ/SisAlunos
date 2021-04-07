@@ -1,4 +1,5 @@
 ﻿using Dominio.Entidades;
+using Infra.Contexto.Maps;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Contexto
@@ -15,7 +16,8 @@ namespace Infra.Contexto
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration(new AlunoMap());
+            modelBuilder.ApplyConfiguration(new CursoMap());
         }
     }
 }
