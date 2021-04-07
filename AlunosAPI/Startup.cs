@@ -20,6 +20,7 @@ namespace AlunosAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
